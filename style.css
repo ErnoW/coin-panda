@@ -1,0 +1,72 @@
+.tabs-wrapper {
+  position: relative;
+}
+
+.tabs-buttons {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.tabs-buttons > * + * {
+  margin-left: 8px;
+}
+
+.data-table-wrapper {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.table-wrapper {
+  overflow-y: auto;
+}
+
+.mc-table {
+  margin-top: -1px;
+  white-space: nowrap;
+  font-size: 0.9em;
+}
+
+.mc-table thead th {
+  color: rgba(0, 0, 0, 0.65);
+  transition: color 100ms ease-in-out;
+}
+
+.mc-table thead th[data-sort-column] {
+  cursor: pointer;
+}
+
+.mc-table thead th[data-sort-column].active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.mc-table thead th[data-sort-column]:hover {
+  color: rgba(0, 0, 0, 1);
+  text-decoration-line: underline;
+}
+
+.positive {
+  color: #1f9e36;
+}
+
+.negative {
+  color: #db5c60;
+}
+
+.coin-info img {
+  height: 1em;
+  margin-right: 4px;
+}
+
+.coin-symbol {
+  text-transform: uppercase;
+}
